@@ -1,0 +1,320 @@
+ALLOWED_HOSTS: '["*"]'
+APPEARANCE_MAXIMUM_TITLE_LENGTH: 120
+APPEND_SLASH: true
+AUTHENTICATION_LOGIN_METHOD: username
+AUTHENTICATION_MAXIMUM_SESSION_LENGTH: 2592000
+AUTH_PASSWORD_VALIDATORS:
+- NAME: django.contrib.auth.password_validation.UserAttributeSimilarityValidator
+- NAME: django.contrib.auth.password_validation.MinimumLengthValidator
+- NAME: django.contrib.auth.password_validation.CommonPasswordValidator
+- NAME: django.contrib.auth.password_validation.NumericPasswordValidator
+AUTOADMIN_EMAIL: autoadmin@example.com
+AUTOADMIN_PASSWORD: null
+AUTOADMIN_USERNAME: admin
+BROKER_URL: redis://127.0.0.1:6379/0
+CELERY_RESULT_BACKEND: redis://127.0.0.1:6379/0
+COMMON_AUTO_LOGGING: true
+COMMON_DB_SYNC_TASK_DELAY: 2
+COMMON_DISABLED_APPS: []
+COMMON_EXTRA_APPS: []
+COMMON_HOME_VIEW: common:home
+COMMON_PAGINATE_BY: 40
+COMMON_PRODUCTION_ERROR_LOGGING: false
+COMMON_PRODUCTION_ERROR_LOG_PATH: /var/lib/mayan/error.log
+COMMON_PROJECT_TITLE: Mayan EDMS
+COMMON_PROJECT_URL: https://www.mayan-edms.com
+COMMON_SHARED_STORAGE: django.core.files.storage.FileSystemStorage
+COMMON_SHARED_STORAGE_ARGUMENTS: '{location: /var/lib/mayan/shared_files}'
+CONVERTER_GRAPHICS_BACKEND: mayan.apps.converter.backends.python.Python
+CONVERTER_GRAPHICS_BACKEND_CONFIG: '        {            libreoffice_path: /usr/bin/libreoffice,            pdftoppm_dpi:
+  300,            pdftoppm_format: jpeg,            pdftoppm_path: /usr/bin/pdftoppm,            pdfinfo_path:
+  /usr/bin/pdfinfo,            pillow_format: JPEG        }    '
+DATABASES:
+  default:
+    ATOMIC_REQUESTS: false
+    AUTOCOMMIT: true
+    CONN_MAX_AGE: 0
+    ENGINE: django.db.backends.sqlite3
+    HOST: ''
+    NAME: /var/lib/mayan/db.sqlite3
+    OPTIONS: {}
+    PASSWORD: ''
+    PORT: ''
+    TEST:
+      CHARSET: null
+      COLLATION: null
+      MIRROR: null
+      NAME: null
+    TIME_ZONE: null
+    USER: ''
+DATA_UPLOAD_MAX_MEMORY_SIZE: 2621440
+DEFAULT_FROM_EMAIL: webmaster@localhost
+DISALLOWED_USER_AGENTS: []
+DOCUMENTS_CACHE_STORAGE_BACKEND: django.core.files.storage.FileSystemStorage
+DOCUMENTS_CACHE_STORAGE_BACKEND_ARGUMENTS: '{location: /var/lib/mayan/document_cache}'
+DOCUMENTS_DISABLE_BASE_IMAGE_CACHE: false
+DOCUMENTS_DISABLE_TRANSFORMED_IMAGE_CACHE: false
+DOCUMENTS_DISPLAY_HEIGHT: ''
+DOCUMENTS_DISPLAY_WIDTH: '3600'
+DOCUMENTS_FAVORITE_COUNT: 400
+DOCUMENTS_FIX_ORIENTATION: false
+DOCUMENTS_HASH_BLOCK_SIZE: 65535
+DOCUMENTS_LANGUAGE: eng
+DOCUMENTS_LANGUAGE_CODES:
+- ilo
+- run
+- uig
+- hin
+- pan
+- pnb
+- wuu
+- msa
+- kxd
+- ind
+- zsm
+- jax
+- meo
+- kvr
+- xmm
+- min
+- mui
+- zmi
+- max
+- mfa
+- cjy
+- nan
+- pus
+- pbu
+- pbt
+- wne
+- hsn
+- hak
+- ful
+- fuc
+- fuf
+- ffm
+- fue
+- fuh
+- fuq
+- fuv
+- fub
+- fui
+- nep
+- npi
+- dty
+- sin
+- khm
+- kxm
+- ell
+- grc
+- cpg
+- gmy
+- pnt
+- tsd
+- yej
+- nya
+- mnp
+- dhd
+- cdo
+- hil
+- bcc
+- bgn
+- bgp
+- cmn
+- kok
+- spa
+- eng
+- ara
+- por
+- ben
+- rus
+- jpn
+- deu
+- jav
+- tel
+- vie
+- kor
+- fra
+- mar
+- tam
+- urd
+- tur
+- ita
+- yue
+- tha
+- guj
+- fas
+- pol
+- kan
+- mal
+- sun
+- hau
+- ory
+- mya
+- ukr
+- bho
+- tgl
+- yor
+- mai
+- uzb
+- snd
+- amh
+- ron
+- orm
+- ibo
+- aze
+- awa
+- gan
+- ceb
+- nld
+- kur
+- hbs
+- mlg
+- skr
+- ctg
+- zha
+- tuk
+- asm
+- mad
+- som
+- mwr
+- mag
+- bgc
+- hun
+- hne
+- dcc
+- aka
+- kaz
+- syl
+- zul
+- ces
+- kin
+- hat
+- que
+- swe
+- hmn
+- sna
+- mos
+- xho
+- bel
+DOCUMENTS_PAGE_IMAGE_CACHE_TIME: '31556926'
+DOCUMENTS_PREVIEW_HEIGHT: ''
+DOCUMENTS_PREVIEW_WIDTH: '800'
+DOCUMENTS_PRINT_HEIGHT: ''
+DOCUMENTS_PRINT_WIDTH: '3600'
+DOCUMENTS_RECENT_ACCESS_COUNT: 400
+DOCUMENTS_RECENT_ADDED_COUNT: 400
+DOCUMENTS_ROTATION_STEP: 90
+DOCUMENTS_STORAGE_BACKEND: django.core.files.storage.FileSystemStorage
+DOCUMENTS_STORAGE_BACKEND_ARGUMENTS: '{location: /var/lib/mayan/document_storage}'
+DOCUMENTS_THUMBNAIL_HEIGHT: ''
+DOCUMENTS_THUMBNAIL_WIDTH: '800'
+DOCUMENTS_ZOOM_MAX_LEVEL: 300
+DOCUMENTS_ZOOM_MIN_LEVEL: 25
+DOCUMENTS_ZOOM_PERCENT_STEP: 25
+DOCUMENT_PARSING_AUTO_PARSING: true
+DOCUMENT_PARSING_PDFTOTEXT_PATH: /usr/bin/pdftotext
+EMAIL_BACKEND: django.core.mail.backends.smtp.EmailBackend
+EMAIL_HOST: localhost
+EMAIL_HOST_PASSWORD: ''
+EMAIL_HOST_USER: ''
+EMAIL_PORT: 25
+EMAIL_TIMEOUT: null
+EMAIL_USE_SSL: false
+EMAIL_USE_TLS: false
+FILE_METADATA_AUTO_PROCESS: true
+FILE_METADATA_DRIVERS_ARGUMENTS: '        {            exif_driver: {exiftool_path:
+  /usr/bin/exiftool},        }    '
+FILE_UPLOAD_MAX_MEMORY_SIZE: 2621440
+INTERNAL_IPS:
+- 127.0.0.1
+LANGUAGES:
+- - ar
+  - Arabic
+- - bg
+  - Bulgarian
+- - bs
+  - Bosnian
+- - cs
+  - Czech
+- - da
+  - Danish
+- - de
+  - German
+- - el
+  - Greek
+- - en
+  - English
+- - es
+  - Spanish
+- - fa
+  - Persian
+- - fr
+  - French
+- - hu
+  - Hungarian
+- - id
+  - Indonesian
+- - it
+  - Italian
+- - lv
+  - Latvian
+- - nl
+  - Dutch
+- - pl
+  - Polish
+- - pt
+  - Portuguese
+- - pt-br
+  - Portuguese (Brazil)
+- - ro
+  - Romanian
+- - ru
+  - Russian
+- - sl
+  - Slovenian
+- - tr
+  - Turkish
+- - vi
+  - Vietnamese
+- - zh
+  - Chinese
+LANGUAGE_CODE: en-us
+LOCK_MANAGER_BACKEND: mayan.apps.lock_manager.backends.file_lock.FileLock
+LOCK_MANAGER_DEFAULT_LOCK_TIMEOUT: 30
+LOGIN_REDIRECT_URL: common:root
+LOGIN_URL: authentication:login_view
+LOGOUT_REDIRECT_URL: authentication:login_view
+MAILER_DOCUMENT_BODY_TEMPLATE: "Attached to this email is the document: {{ document\
+  \ }}\n\n --------\n This email has been sent from %(project_title)s (%(project_website)s)"
+MAILER_DOCUMENT_SUBJECT_TEMPLATE: 'Document: {{ document }}'
+MAILER_LINK_BODY_TEMPLATE: "To access this document click on the following link: {{\
+  \ link }}\n\n--------\n This email has been sent from %(project_title)s (%(project_website)s)"
+MAILER_LINK_SUBJECT_TEMPLATE: 'Link for document: {{ document }}'
+MAYAN_CELERY_CLASS: celery.Celery
+METADATA_AVAILABLE_PARSERS:
+- mayan.apps.metadata.parsers.DateAndTimeParser
+- mayan.apps.metadata.parsers.DateParser
+- mayan.apps.metadata.parsers.TimeParser
+METADATA_AVAILABLE_VALIDATORS:
+- mayan.apps.metadata.validators.DateAndTimeValidator
+- mayan.apps.metadata.validators.DateValidator
+- mayan.apps.metadata.validators.TimeValidator
+MIRRORING_DOCUMENT_CACHE_LOOKUP_TIMEOUT: 10
+MIRRORING_NODE_CACHE_LOOKUP_TIMEOUT: 10
+OCR_AUTO_OCR: true
+OCR_BACKEND: mayan.apps.ocr.backends.tesseract.Tesseract
+OCR_BACKEND_ARGUMENTS: ''
+SIGNATURES_GPG_HOME: /var/lib/mayan/gpg_home
+SIGNATURES_GPG_PATH: /usr/bin/gpg1
+SIGNATURES_KEYSERVER: pool.sks-keyservers.net
+SIGNATURES_STORAGE_BACKEND: django.core.files.storage.FileSystemStorage
+SIGNATURES_STORAGE_BACKEND_ARGUMENTS: '{location: /var/lib/mayan/document_signatures}'
+SOURCES_SCANIMAGE_PATH: /usr/bin/scanimage
+SOURCES_STAGING_FILE_CACHE_STORAGE_BACKEND: django.core.files.storage.FileSystemStorage
+SOURCES_STAGING_FILE_CACHE_STORAGE_BACKEND_ARGUMENTS: '{location: /var/lib/mayan/staging_file_cache}'
+STATICFILES_STORAGE: whitenoise.storage.CompressedManifestStaticFilesStorage
+STATIC_URL: /static/
+STORAGE_TEMPORARY_DIRECTORY: /tmp
+TIME_ZONE: UTC
+WSGI_APPLICATION: mayan.wsgi.application
